@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ScalingCapsule : MonoBehaviour
+public class Scaler : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private Vector3 _maximumScale;
@@ -23,7 +23,7 @@ public class ScalingCapsule : MonoBehaviour
         else 
         {
             CheckScale();
-            _remainingTimeToCheckScale = 2f;
+            _remainingTimeToCheckScale = _timeToCheckScale;
         }
 
         if(_isGettingBigger)
